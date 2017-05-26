@@ -55,11 +55,9 @@ static const char *downvol[] = { "amixer", "set", "Master", "3-",     NULL };
 static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
 
 /* Brightness */
-/* Brightness keys */
-#define KEY_BRIGHTNESS_UP 0x1008ff06
-#define KEY_BRIGHTNESS_DOWN 0x1008ff05
-static const char *cmdbrightnessup[]  = { "xbacklight", "-inc", "10", NULL };
-static const char *cmdbrightnessdown[]  = { "xbacklight", "-dec", "10", NULL };
+static const char *brightup[]       = { "xbacklight", "-inc", "10", NULL};
+static const char *brightdown[]     = { "xbacklight", "-dec", "10", NULL};
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -97,10 +95,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_F12,    spawn,          {.v = upvol   } },
 	{ MODKEY,                       XK_F11,    spawn,          {.v = downvol } },
-	{ MODKEY,                       XK_F9,     spawn,          {.v = mutevol } },
+	{ MODKEY,                       XK_F10,     spawn,          {.v = mutevol } },
 	/* Brightness */
-	{ 0,                            KEY_BRIGHTNESS_UP,     spawn,         {.v = cmdbrightnessup } },
-	{ 0,                            KEY_BRIGHTNESS_DOWN,     spawn,         {.v = cmdbrightnessdown } },
+	{ MODKEY,            XK_F5,                     spawn,            {.v = brightdown } },
+	{ MODKEY,            XK_F6,                     spawn,            {.v = brightup }  },
 };
 
 /* button definitions */
