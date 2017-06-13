@@ -1,0 +1,3 @@
+#!/bin/bash
+vol_perc=`amixer get Master -M | grep -oE "[[:digit:]]*%"`
+echo "${vol_perc}"
