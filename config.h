@@ -55,8 +55,11 @@ static const char *downvol[] = { "amixer", "set", "Master", "3-",     NULL };
 static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
 
 /* Brightness */
-static const char *brightup[]       = { "xbacklight", "-inc", "10", NULL};
-static const char *brightdown[]     = { "xbacklight", "-dec", "10", NULL};
+static const char *brightup[]       = { "xbacklight", "-inc", "5", NULL};
+static const char *brightdown[]     = { "xbacklight", "-dec", "5", NULL};
+
+/* Screenshot */
+static const char *screenshot[] = { "import", "ss.png", NULL};
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
@@ -99,6 +102,7 @@ static Key keys[] = {
     /* Brightness */
     { MODKEY,            XK_F5,                     spawn,            {.v = brightdown } },
     { MODKEY,            XK_F6,                     spawn,            {.v = brightup }  },
+    { MODKEY,		 XK_s,			    spawn,	      {.v = screenshot } },
 };
 
 /* button definitions */
