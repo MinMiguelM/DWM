@@ -1,12 +1,16 @@
-#Desktop:
+# Desktop
+------------
+```
 [Desktop Entry]
 Name=Dwm
 Exec=~/dwm/.xsession
+```
 
-#Dependencies
+# Dependencies
+------------
 In file dependencies are the install commands to get the dependencies to run dwm.
 
-#Installation
+# Installation
 ------------
 Edit config.mk to match your local setup 
 
