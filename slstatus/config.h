@@ -41,7 +41,8 @@
 static const struct arg args[] = {
 	/* function	format        argument */
 	{ wifi_essid, "[WiFi %s] ", "wlp3s0" },
-	{ ip, "[IP %s] ", "wlp3s0" },
+	{ ip, "[IP-WiFi %s] ", "wlp3s0" },
+	{ ip, "[IP-Ethe %s] ", "enp4s0f2" },
 	{ cpu_perc, "[CPU %4s] ", NULL },
 	{ ram_perc, "[RAM %3s] ", NULL },
 //	{ vol_perc_amixer, "[VOL %s] ", NULL},
