@@ -8,9 +8,9 @@ do
 	if ([ $BATT -le 10 ] && [ $STATUS == 'Discharging' ]); then
 		notify-send 'Battery low' 'Plug in the PC'
 		# Beep
-		paplay --volume=65536 /usr/share/sounds/ubuntu/notifications/Xylo.ogg && sleep 0.2
-		paplay --volume=65536 /usr/share/sounds/ubuntu/notifications/Xylo.ogg && sleep 0.2
-		paplay --volume=65536 /usr/share/sounds/ubuntu/notifications/Xylo.ogg && sleep 0.2
+		paplay --volume=65536 /usr/share/sounds/freedesktop/stereo/suspend-error.oga && sleep 0.2
+		paplay --volume=65536 /usr/share/sounds/freedesktop/stereo/suspend-error.oga && sleep 0.2
+		paplay --volume=65536 /usr/share/sounds/freedesktop/stereo/suspend-error.oga && sleep 0.2
 	fi
 	# Update every 10s sleep 10s
 	sleep 10s

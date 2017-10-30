@@ -47,16 +47,12 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "x-terminal-emulator", NULL };
+static const char *termcmd[]  = { "gnome-terminal", NULL };
 
 /* Volume */
 static const char *upvol[]   = { "amixer", "set", "Master", "3+",     NULL };
 static const char *downvol[] = { "amixer", "set", "Master", "3-",     NULL };
 static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
-
-/* Brightness */
-static const char *brightup[]       = { "xbacklight", "-inc", "5", NULL};
-static const char *brightdown[]     = { "xbacklight", "-dec", "5", NULL};
 
 /* Screenshot */
 static const char *screenshot[] = { "import", "ss.png", NULL};
@@ -99,9 +95,6 @@ static Key keys[] = {
     { MODKEY,                       XK_F12,    spawn,          {.v = upvol   } },
     { MODKEY,                       XK_F11,    spawn,          {.v = downvol } },
     { MODKEY,                       XK_F10,     spawn,          {.v = mutevol } },
-    /* Brightness */
-    { MODKEY,            XK_F5,                     spawn,            {.v = brightdown } },
-    { MODKEY,            XK_F6,                     spawn,            {.v = brightup }  },
     { MODKEY,		 XK_s,			    spawn,	      {.v = screenshot } },
 };
 
