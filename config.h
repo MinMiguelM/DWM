@@ -52,7 +52,7 @@ static const char *termcmd[]  = { "x-terminal-emulator", NULL };
 /* Volume */
 static const char *upvol[]   = { "amixer", "set", "Master", "3+",     NULL };
 static const char *downvol[] = { "amixer", "set", "Master", "3-",     NULL };
-static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
+static const char *mutevol[] = { "muteaudio", NULL };
 
 /* Brightness */
 static const char *brightup[]       = { "xbacklight", "-inc", "5", NULL};
