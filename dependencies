@@ -1,1 +1,0 @@
-sudo pacman -S libx11 acpi dmenu imagemagick
