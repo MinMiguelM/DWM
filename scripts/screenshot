@@ -1,0 +1,3 @@
+#!/bin/bash
+
+import ~/ss.png && xclip -selection clipboard -t image/png -i ~/ss.png

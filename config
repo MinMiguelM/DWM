@@ -154,8 +154,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-
-#Custom configuration
+##########################################################################################
+##   Custom configuration                                                               ##
+##########################################################################################
 
 #Volume 
 bindsym XF86AudioMute exec amixer -q sset Master toggle
@@ -164,3 +165,13 @@ bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+
 
 #Last workspace
 bindsym $mod+Tab workspace back_and_forth
+
+#Default values
+default_orientation vertical
+
+#Brightness
+bindsym XF86MonBrightnessDown exec light -U 5
+bindsym XF86MonBrightnessUp exec light -A 5
+
+#Screenshot
+bindsym --release Print exec "$HOME/bin/screenshot"
