@@ -3,6 +3,9 @@
 ## Installation
 sudo pacman -S i3
 
+## Wallpaper manager
+sudo pacman -S fuh
+
 ## Key detector
  - xev
  

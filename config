@@ -175,3 +175,5 @@ bindsym XF86MonBrightnessUp exec light -A 5
 
 #Screenshot
 bindsym --release Print exec "$HOME/bin/screenshot"
+
+exec feh --bg-max /home/miguel/Pictures/aws-roadmap.png
