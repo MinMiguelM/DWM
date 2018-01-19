@@ -176,4 +176,7 @@ bindsym XF86MonBrightnessUp exec light -A 5
 #Screenshot
 bindsym --release Print exec "$HOME/bin/screenshot"
 
+#Startup settings
 exec feh --bg-max /home/miguel/Pictures/aws-roadmap.png
+exec xset b off
+exec "/home/miguel/bin/clear_cache_dmenu"
