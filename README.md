@@ -1,6 +1,6 @@
 # Install ArchLinux
 
-`/etc/resolv.conf
+/etc/resolv.conf
 options timeout:1
 
 https://wiki.archlinux.org/index.php/Pacman/Package_signing#Cannot_import_keys
@@ -8,7 +8,8 @@ https://wiki.archlinux.org/index.php/Pacman/Package_signing#Cannot_import_keys
 keyserver hkp://pgp.mit.edu:11371
 pacman-key --refresh-keys
 
-https://www.ostechnix.com/arch-anywhere-an-easy-way-to-install-a-fully-custom-arch-linux-system/`
+https://www.ostechnix.com/arch-anywhere-an-easy-way-to-install-a-fully-custom-arch-linux-system/
+
 
 # i3 for ArchLinux
 
