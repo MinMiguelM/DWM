@@ -17,7 +17,7 @@ https://www.ostechnix.com/arch-anywhere-an-easy-way-to-install-a-fully-custom-ar
 sudo pacman -S i3
 
 ## Wallpaper manager
-sudo pacman -S fuh
+sudo pacman -S feh
 
 ## Key detector
  - xev
