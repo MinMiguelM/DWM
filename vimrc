@@ -1,3 +1,6 @@
+set nocp
+execute pathogen#infect()
+syntax on
 " All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
 " /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
@@ -17,11 +20,26 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-" Custom vim configuration
-"" Custom mapping
+"""""""""""""""""""""""""""""" Custom vim configuration
+""""" Custom mapping
 map jc :!javac %<CR>
 map jj :!java %:r<CR>
 
-"" vim properties
+""""" vim properties
 set tabstop=4 expandtab shiftwidth=4
 set number
+""""" Plugins
+" NERDTree:
+" autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+" vim-colors-solarized
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
+" vim-fugitive
+set statusline+=%{fugitive#statusline()}
