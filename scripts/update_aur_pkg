@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo You may specify package to be updated
+    exit 1
+fi
+
+cd ~/packages
+
+PACKAGE=$1
+BASE_AUR_URL="https://aur.archlinux.org/cgit/aur.git/snapshot/$PACKAGE.tar.gz"
+
+curl -O -sSL $BASE_AUR_URL
+tar xzf "$PACKAGE.tar.gz"
+rm "$PACKAGE.tar.gz"
+cd $PACKAGE
+makepkg -isc
+
+cd ..
+rm -rf $PACKAGE
