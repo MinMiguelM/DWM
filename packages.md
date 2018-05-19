@@ -5,6 +5,7 @@
 - htop
 - feh
 - fish
+- fprintd
 
 # AUR packages
 - spotify
