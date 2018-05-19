@@ -35,5 +35,5 @@ sudo pacman -S feh
 
 ## Thinkpad fingerprint
  - Package: fprintd
- - Add the next line to top of file: /etc/pam.d/system-local-login
-    `auth sufficient pam_fprintd.so`
+ - Add the next line to top of file: /etc/pam.d/system-local-login  
+`auth sufficient pam_fprintd.so`
