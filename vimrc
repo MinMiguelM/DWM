@@ -28,6 +28,9 @@ map jj :!java %:r<CR>
 """"" vim properties
 set tabstop=4 expandtab shiftwidth=4
 set number
+set cursorline
+set autoread
+set incsearch
 """"" Plugins
 " NERDTree:
 " autocmd vimenter * NERDTree
@@ -43,3 +46,11 @@ colorscheme solarized
 
 " vim-fugitive
 set statusline+=%{fugitive#statusline()}
+
+" vim-airline
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#whitespace#enabled = 1
+let g:airline#extensions#hunks#non_zero_only = 1
