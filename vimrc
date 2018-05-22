@@ -44,11 +44,8 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-" vim-fugitive
-set statusline+=%{fugitive#statusline()}
-
 " vim-airline
-let g:airline_theme='minimalist'
+let g:airline_theme='simple'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
