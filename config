@@ -183,3 +183,6 @@ exec --no-startup-id xset b off
 exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id /usr/bin/google-chrome-stable'
 
 default_border pixel 2
+
+#Toggle bar
+bindsym $mod+m bar mode toggle
