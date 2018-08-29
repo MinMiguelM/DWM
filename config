@@ -180,10 +180,25 @@ bindsym --release Print exec "$HOME/bin/screenshot"
 #Startup settings
 exec feh --bg-max ~/Pictures/aws-roadmap.png
 exec --no-startup-id xset b off
-exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id /usr/bin/google-chrome-stable'
-exec --no-startup-id i3-msg 'workspace 0; exec --no-startup-id /usr/bin/spotify'
+exec --no-startup-id i3-msg 'workspace 6; exec --no-startup-id /usr/bin/google-chrome-stable'
+#exec --no-startup-id i3-msg 'workspace 5; exec --no-startup-id /usr/bin/spotify'
 
 default_border pixel 2
 
 #Toggle bar
 bindsym $mod+m bar mode toggle
+
+# Monitors
+set $firstMonitor eDP-1
+set $secondMonitor HDMI-1
+
+workspace 1 output $firstMonitor
+workspace 2 output $firstMonitor
+workspace 3 output $firstMonitor
+workspace 4 output $firstMonitor
+workspace 5 output $firstMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $secondMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
