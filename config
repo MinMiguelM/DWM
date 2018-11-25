@@ -155,7 +155,7 @@ bindsym $mod+r mode "resize"
 bar {
         #status_command SCRIPT_DIR=~/.config/i3blocks 2>/tmp/i3blocks.err i3blocks -vvv | tee /tmp/i3blocks.out
         #status_command SCRIPT_DIR=~/.config/i3blocks i3blocks
-        status_command i3status
+        status_command py3status -c ~/.config/i3status/i3status.conf -i ~/.config/i3status/py3modules #-l /tmp/py3status.ct.out
 }
 ##########################################################################################
 ##   Custom configuration                                                               ##

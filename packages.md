@@ -6,6 +6,7 @@
 - feh
 - fish
 - fprintd
+- py3status
 
 # AUR packages
 - spotify
