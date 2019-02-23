@@ -171,6 +171,7 @@ bindsym $mod+Tab workspace back_and_forth
 
 #Default values
 default_orientation vertical
+workspace_layout tabbed
 
 #Brightness
 bindsym XF86MonBrightnessDown exec light -U 5
