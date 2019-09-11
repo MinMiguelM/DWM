@@ -37,3 +37,6 @@ sudo pacman -S feh
  - Package: fprintd
  - Add the next line to top of file: /etc/pam.d/system-local-login  
 `auth sufficient pam_fprintd.so`
+
+## KVM
+ - https://www.fosslinux.com/2484/how-to-install-virtual-machine-manager-kvm-in-manjaro-and-arch-linux.htm
