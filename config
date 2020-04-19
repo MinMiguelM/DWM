@@ -190,8 +190,8 @@ default_border pixel 2
 bindsym $mod+m bar mode toggle
 
 # Monitors
-set $firstMonitor eDP-1
-set $secondMonitor HDMI-1
+set $firstMonitor DVI-I-3-2
+set $secondMonitor DVI-I-2-1
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
